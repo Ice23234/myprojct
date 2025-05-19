@@ -1,0 +1,85 @@
+.container{
+    position: relative;
+    width: 100%;           
+  height: 100vh; 
+  background-color: antiquewhite;
+    }
+  .picture{
+    position: absolute;
+    left: 40%;
+    top: 200px;
+    width: 250px;
+    height: 250px;
+  }
+  .btn-move {
+    position: absolute; 
+    top: 62%;
+    left: 40%;
+    cursor: pointer;
+    padding: 20px 30px;
+    font-size: 23px;
+    background-color: pink;
+    border: none;
+    border-radius: 80px;
+  }
+  .btn-next {
+    position: absolute; 
+    cursor: pointer;
+    top: 62%;
+    left: 52%;
+    padding: 20px 30px;
+    font-size: 23px;
+    background-color: pink;
+    border: none;
+    border-radius: 80px;
+  }
+  @keyframes shake {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-5px, 0); }
+    50% { transform: translate(5px, 0); }
+    75% { transform: translate(-5px, 0); }
+    100% { transform: translate(0, 0); }
+  }
+  
+  .shake {
+    animation: shake 0.3s;
+  }
+  
+  .btn-shake {
+    position: absolute; 
+    cursor: pointer;
+    top: 69%;
+    left: 46.5%;
+    padding: 20px 30px;
+    font-size: 23px;
+    background-color: pink;
+    border: none;
+    border-radius: 80px;
+  }
+  .return {
+    position: relative;   
+    cursor: pointer; 
+    top: 60%;
+    left: 46%;
+    font-size: 23px;
+    background-color: pink;
+    border: none;
+    border-radius: 80px;
+    padding: 20px 30px;
+    z-index: 10;
+  }
+  .text{
+    position: relative;
+    top: 48%;
+    left: 41.3%;
+    font-size: 23px;
+  }
+  .icepraew img{
+    width: 1500px;
+  height: 1500px;
+  object-fit: contain;
+  position: absolute;
+  top: -50%;
+  left: 10%;
+  z-index: 1;
+}

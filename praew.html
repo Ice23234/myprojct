@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/praew.css">
+</head>
+<body>
+    <div class="container">
+       <div class="picture"><img src="stich-beso.gif" alt="stich"></div>
+      
+
+
+
+
+<button class="btn-move" onclick="moveButton(this)">ไม่รัก</button>
+<script>
+  function moveButton(button) {
+    const body = document.body;
+    const maxX = body.clientWidth - button.offsetWidth;
+    const maxY = body.clientHeight - button.offsetHeight;
+
+ 
+    const newX = Math.floor(Math.random() * maxX);
+    const newY = Math.floor(Math.random() * maxY);
+
+    
+    button.style.left = newX + 'px';
+    button.style.top = newY + 'px';
+    button.style.transform = 'translate(0, 0)';
+  }
+</script>
+
+<button class="btn-shake" onclick="shakeButton(this)">รัก</button>
+
+<script>
+  function shakeButton(button) {
+    button.classList.add("shake");
+    setTimeout(() => {
+      button.classList.remove("shake");
+    }, 300);
+  }
+</script>
+</script>
+
+<button class="btn-next" onclick="nextpage()">รักมาก</button>
+<script>
+    function nextpage(){
+        window.location = "praewice.html";
+    }
+</script>
+
+    </div>
+
+</body>
+</html>
